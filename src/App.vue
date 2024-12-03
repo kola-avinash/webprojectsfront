@@ -2,18 +2,22 @@
   <div>  
     <ProjectBox :projects="projects" />
     <SingleBox :projects="projects" />
+    <AllProjects :projects="projects" />
   </div>
 </template>
 
 <script>
 import ProjectBox from './components/ProjectBox.vue'
 import SingleBox from './components/SingleBox.vue'
+import AllProjects from './components/AllProjects.vue';  // Correct case
+
 
 export default {
   name: 'App',
   components: {
     ProjectBox,
-    SingleBox
+    SingleBox,
+    AllProjects
   },
   data() {
     return {
@@ -37,5 +41,5 @@ export default {
 </script>
 
 <style>
-
+  
 </style>
